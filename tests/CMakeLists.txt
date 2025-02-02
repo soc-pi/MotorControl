@@ -1,8 +1,13 @@
-# Add test executable
-add_executable(${PROJECT_NAME}_test test_main.c)
+cmake_minimum_required(VERSION 3.10)
+project(MotorControl)
 
-# Link the test executable with the project library
-target_link_libraries(${PROJECT_NAME}_test MotorControl_lib)
+enable_testing()
 
-# Add tests
-add_test(NAME ${PROJECT_NAME}_test COMMAND ${PROJECT_NAME}_test)
+add_subdirectory(src)
+add_subdirectory(tests)
+
+
+add_executable(test_motor_control test_main.c)
+target_link_libraries(test_motor_control motor_control)
+
+add_test(NAME test_motor_control COMMAND test_motor_control)
