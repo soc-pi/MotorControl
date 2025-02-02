@@ -1,0 +1,4 @@
+# ninja log v6
+1	14	1738531459363229695	lib/MotorControl/CMakeFiles/MotorControl_lib.dir/MotorControl.c.o	751bb28c99992194
+1	17	1738531459363229695	src/CMakeFiles/MotorControl.dir/main.c.o	ac32694b63ce88fb
+14	39	1738531459376229652	lib/MotorControl/libMotorControl_lib.a	cba81d399d4725d4

@@ -3,10 +3,6 @@ project(MotorControl)
 
 enable_testing()
 
-add_subdirectory(src)
-add_subdirectory(tests)
-
-
 add_executable(test_motor_control test_main.c)
 target_link_libraries(test_motor_control motor_control)
 
