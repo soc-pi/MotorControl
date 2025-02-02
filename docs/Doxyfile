@@ -1,0 +1,8 @@
+# Doxygen configuration file
+# This is a minimal Doxygen configuration file for generating documentation
+
+PROJECT_NAME           = MotorControl
+OUTPUT_DIRECTORY       = docs
+INPUT                  = ../include
+RECURSIVE              = YES
+GENERATE_LATEX         = NO
